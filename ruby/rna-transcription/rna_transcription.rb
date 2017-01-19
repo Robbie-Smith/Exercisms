@@ -3,8 +3,8 @@ module BookKeeping
 end
 
 class Complement
-    RNA = {"C"=> "G", "G"=>"C", "A"=> "T",
-    "U"=>"A"}
+  RNA = {"C"=> "G", "G"=>"C", "A"=> "T",
+  "U"=>"A"}
 
   def self.of_dna(n_tide)
     check_input_for_validity(n_tide)

@@ -4,22 +4,24 @@ module BookKeeping
 end
 
 class Fixnum
-
-NUMBERS = {M: 1000, D: 500, CD: 400, C: 100, XC: 90, L: 50, XL: 40,  X: 10, IX: 9, V: 5, IV: 4, I: 1}
+  ROMAN_NUM =
+  {"I" => 1,
+    "V"=> 5,
+    "X" => 10,
+    "L" => 50,
+    "C" => 100,
+    "D" => 500,
+  "M" =>1000}
 
   def to_roman
     num = self
-    NUMBERS.value?(num) ? NUMBERS.key(num).to_s : convert(num)
-  end
-
-  def convert(num)
-    NUMBERS.reduce('') do |num_set, (key,value)|
-      while num >= value
-        num -= value
-        num_set << key.to_s
+    roman = ""
+    ROMAN_NUM.each_pair do |(key,value)|
+      if num != value
+        value += 1
+        roman << key
+        break if value.eql?(num)
       end
-      num_set
     end
   end
-
 end

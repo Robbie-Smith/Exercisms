@@ -4,35 +4,32 @@ require 'minitest/autorun'
 require 'minitest/pride'
 require_relative 'roman_numerals'
 
+
 # Test data version:
 # deb225e Implement canonical dataset for scrabble-score problem (#255)
 
 class RomanNumeralsTest < Minitest::Test
   def test_1
-    skip
-    # binding.pry
+    # skip
     assert_equal 'I', 1.to_roman
   end
 
   def test_2
-    skip
-    # binding.pry
+    #skip
     assert_equal 'II', 2.to_roman
   end
 
   def test_3
-    skip
+    #skip
     assert_equal 'III', 3.to_roman
   end
 
   def test_4
-    skip
     assert_equal 'IV', 4.to_roman
   end
 
   def test_5
-    skip
-    assert_equal 'V', 5.to_roman
+    assert_equal 'V', 5.to_rom
   end
 
   def test_6
@@ -81,7 +78,7 @@ class RomanNumeralsTest < Minitest::Test
   end
 
   def test_575
-    # skip
+    skip
     assert_equal 'DLXXV', 575.to_roman
   end
 
