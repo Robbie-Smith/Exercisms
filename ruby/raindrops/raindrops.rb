@@ -13,5 +13,3 @@ class Raindrops
     return num.to_s
   end
 end
-
-http://exercism.io/submissions/7f06da3e5c8f41ebb2230221575467ae

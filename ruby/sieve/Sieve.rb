@@ -1,5 +1,5 @@
 class Sieve
-attr_reader :num
+  attr_reader :num
   def initialize(num)
     @prime = (2..num).to_a
     @num = num

@@ -14,11 +14,12 @@ defmodule NucleotideCount do
   1
   """
   @spec count([char], char) :: non_neg_integer
-  def count(strand, nucleotide) do
-    if strang != nucleotide do
-      0
-    end
-  end
+  # def count(strand, nucleotide) do
+
+  #   if strand != nucleotide do
+  #     0
+  #   end
+  # end
 
 
   @doc """

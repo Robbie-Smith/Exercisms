@@ -25,7 +25,6 @@ type Clock struct {
 
 func New(hour, minute int) Clock {
 	c := Clock{(60*hour + minute) % 1440}
-	_ = "breakpoint"
 	if c.min < 0 {
 		c.min += 1440
 	}

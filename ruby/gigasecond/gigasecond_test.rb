@@ -10,7 +10,6 @@ require_relative 'gigasecond'
 class GigasecondTest < Minitest::Test
   def test_2011_04_25
     result = Gigasecond.from(Time.utc(2011, 4, 25, 0, 0, 0))
-    # binding.pry
     assert_equal Time.utc(2043, 1, 1, 1, 46, 40), result
   end
 
